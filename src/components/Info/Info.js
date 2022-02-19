@@ -1,11 +1,18 @@
 import DetailBar from "components/DetailBar/DetailBar";
+import useMediaQuery from "hooks/useMediaQuery";
 import React from "react";
 import styles from "./Info.module.css";
 
 function Info() {
+  const isBellow1440px = useMediaQuery("(max-width : 1440px)");
+
   return (
     <>
-      <h1 className="text-center fs-40px font-pt-serif-caption weight-4 mb-50px">
+      <h1
+        className={`text-center fs-40px font-pt-serif-caption weight-4 ${
+          isBellow1440px ? "mb-25px" : "mb-50px"
+        }`}
+      >
         Info
       </h1>
       <div className={`${styles.details} mb-25px`}>

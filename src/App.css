@@ -662,3 +662,24 @@ li {
 .exclusion-hover-effect:hover {
   mix-blend-mode: normal;
 }
+
+@media (max-width: 1440px) {
+  :root {
+    --fs-36px: 26px;
+    --fs-40px: 30px;
+    --fs-48px: 38px;
+    --fs-24px: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    --fs-36px: 18px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --fs-36px: 18px;
+    --fs-40px: 20px;
+    --fs-48px: 20px;
+  }
+}

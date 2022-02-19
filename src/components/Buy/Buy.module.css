@@ -42,3 +42,9 @@
   border-radius: 5px;
   padding: 12px 0;
 }
+
+@media (max-width: 600px) {
+  .textarea {
+    height: 131px;
+  }
+}

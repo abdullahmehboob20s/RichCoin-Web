@@ -1,14 +1,20 @@
 import Checkbox from "components/Checkbox/Checkbox";
+import useMediaQuery from "hooks/useMediaQuery";
 import React from "react";
 import { useSelector } from "react-redux";
 import styles from "./Buy.module.css";
 
 function Buy() {
   const state = useSelector((state) => state.userState);
+  const isBellow1440px = useMediaQuery("(max-width : 1440px)");
 
   return (
     <div className={styles.wrapper}>
-      <h1 className="text-center fs-40px font-pt-serif-caption weight-4 mb-70px">
+      <h1
+        className={`text-center fs-40px font-pt-serif-caption weight-4 ${
+          isBellow1440px ? "mb-45px" : "mb-70px"
+        } `}
+      >
         Buy
       </h1>
       {state.isAuthenticated ? (

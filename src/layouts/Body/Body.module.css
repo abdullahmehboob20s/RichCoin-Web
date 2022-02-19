@@ -5,7 +5,33 @@
 
 .body {
   display: grid;
-  grid-template-columns: 1fr 529px 1fr;
+  grid-template-columns: 357px 1fr 267px;
   gap: 5rem;
   grid-auto-rows: 1fr;
+}
+
+@media (max-width: 1440px) {
+  .body {
+    gap: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .body {
+    gap: 2.5rem;
+    grid-template-columns: 200px 1fr 200px;
+  }
+}
+@media (max-width: 890px) {
+  .body {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 2rem;
+  }
+
+  .body > div:nth-child(2) {
+    grid-row: 1/2;
+  }
+  .body > div:nth-child(3) {
+    grid-row: 2/3;
+  }
 }
