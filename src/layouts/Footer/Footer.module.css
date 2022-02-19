@@ -1,0 +1,17 @@
+.wrapper {
+  background: #26292e;
+}
+.footer {
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+}
+.socialIcon > :not(:last-child) {
+  margin-right: 26px;
+}

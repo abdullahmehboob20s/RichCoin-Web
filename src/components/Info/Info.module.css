@@ -1,0 +1,15 @@
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.btn {
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}

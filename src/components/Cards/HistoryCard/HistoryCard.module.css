@@ -1,0 +1,15 @@
+.card {
+  background: url(../../../assets/images/borderImg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding: 2.5rem 40px;
+  display: flex;
+  align-items: center;
+}
+
+.richTag {
+  margin-right: 10px;
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
