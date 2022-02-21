@@ -20,7 +20,8 @@ function Buy() {
       {state.isAuthenticated ? (
         <div className={styles.content}>
           <button
-            className={`${styles.btn} fs-24px text-center weight-4 pointer mb-35px exclusion-hover-effect`}
+            disabled
+            className={`${styles.btn} fs-24px text-center weight-4 pointer mb-35px `}
           >
             Approve DEX
           </button>
@@ -40,7 +41,8 @@ function Buy() {
           </div>
 
           <button
-            className={`${styles.buyButton} mb-10px pointer exclusion-hover-effect fs-24px white weight-4`}
+            disabled
+            className={`${styles.buyButton} mb-10px pointer  fs-24px white weight-4`}
           >
             Buy the RichCoin
           </button>

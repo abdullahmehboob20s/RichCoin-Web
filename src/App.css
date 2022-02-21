@@ -659,6 +659,11 @@ li {
   mix-blend-mode: exclusion;
 }
 
+button[disabled] {
+  mix-blend-mode: exclusion;
+  opacity: 0.7;
+}
+
 .exclusion-hover-effect:hover {
   mix-blend-mode: normal;
 }

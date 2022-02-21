@@ -1,11 +1,16 @@
 .card {
-  background: url(../../../assets/images/borderImg.png);
+  /* background: url(../../../assets/images/borderImg.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
-  padding: 2.5rem 40px;
+  background-size: 100% 100%; */
+  padding: 0.5rem 16px;
   display: flex;
   align-items: center;
+  /* border: 2px solid red; */
+  border: 40px solid;
+  border-image-source: url(../../../assets/images/borderImg.png);
+  border-image-slice: 150;
+  /* border-image-repeat: repeat; */
 }
 
 .richTag {
@@ -22,9 +27,20 @@
 
 @media (max-width: 600px) {
   .card {
-    padding: 2.5rem 30px;
+    border: 30px solid;
+    border-image-source: url(../../../assets/images/borderImg.png);
+    border-image-slice: 120;
+    padding: 0.5rem 14px;
   }
   .richTag {
     width: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    border: 25px solid;
+    border-image-source: url(../../../assets/images/borderImg.png);
+    border-image-slice: 150;
+    padding: 0.5rem 14px;
   }
 }

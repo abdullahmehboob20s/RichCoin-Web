@@ -19,11 +19,12 @@ function Info() {
         <DetailBar
           title="Address:"
           text="0x0000000000000000000000000000000000000000"
+          type="text"
         />
-        <DetailBar title="Rank:" text="0" />
-        <DetailBar title="Order:" text="0" />
-        <DetailBar title="Message:" text="..." />
-        <DetailBar title="Wei paid:" text="x Wei" />
+        <DetailBar title="Rank:" type="number" text="0" />
+        <DetailBar title="Order:" type="number" text="0" />
+        <DetailBar title="Message:" type="text" text="..." />
+        <DetailBar title="Wei paid:" type="text" text="x Wei" />
       </div>
       <button className={`${styles.btn} fs-24px weight-4 white text-center`}>
         Add RichCoin to Wallet
