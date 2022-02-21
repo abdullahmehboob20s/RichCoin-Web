@@ -12,11 +12,13 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <Navbar />
-        <div className={isBellow600px ? "mb-50px" : ""}>
-          <Body />
+        <div className="CONTENT">
+          <Navbar />
+          <div className={`${isBellow600px ? "mb-50px" : ""} BODY`}>
+            <Body />
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </Provider>
     </div>
   );

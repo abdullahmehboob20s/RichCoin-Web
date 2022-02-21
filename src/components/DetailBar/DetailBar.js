@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./DetailBar.module.css";
 
-const DetailBar = ({ title, text, type = "text" }) => {
+const DetailBar = ({ title, text, type = "text", disabled = false }) => {
   const [value, setValue] = useState(text);
   return (
     <div className={styles.detailBar}>
@@ -14,6 +14,7 @@ const DetailBar = ({ title, text, type = "text" }) => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
         id={title}
+        disabled={disabled}
       />
     </div>
   );

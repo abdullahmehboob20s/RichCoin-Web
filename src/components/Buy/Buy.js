@@ -29,6 +29,7 @@ function Buy() {
           <div className="mb-20px">
             <p className="fs-16px white weight-4 mb-10px">Message:</p>
             <textarea
+              disabled={false}
               className={`${styles.textarea} black fs-16px `}
             ></textarea>
           </div>
