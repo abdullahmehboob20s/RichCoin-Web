@@ -108,10 +108,12 @@
     background-color: #26292e;
     opacity: 0;
     transition: all 0.2s ease;
+    pointer-events: none;
   }
 
   .links.open {
     opacity: 1;
+    pointer-events: visible;
   }
 
   .link {

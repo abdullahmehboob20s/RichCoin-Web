@@ -26,14 +26,14 @@ function HistoryCard({
         <p
           className={`${
             isBellow1000px ? (isBellow450px ? "fs-10px" : "fs-14px") : "fs-16px"
-          } ${isBellow450px ? "mb-5px" : ""} white weight-4`}
+          } ${isBellow450px ? "mb-5px" : ""}z white weight-4`}
         >
           Message:{msg}
         </p>
         <p
           className={`${
             isBellow1000px ? (isBellow450px ? "fs-10px" : "fs-14px") : "fs-16px"
-          } ${isBellow450px ? "mb-5px" : ""} white weight-4`}
+          } ${isBellow450px ? "mb-5px" : ""}z white weight-4`}
         >
           Wei paid: {weiPaid}
         </p>
